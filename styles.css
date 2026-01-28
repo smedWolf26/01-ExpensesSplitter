@@ -9,8 +9,8 @@ body {
     place-items: center;
     padding: 24px;
     font-family: system-ui, sans-serif;
-    background: #9298aa;
-    color: #1f2937;
+    background: #eeeef1;
+    color: #670296;
 }
 
 
@@ -94,6 +94,7 @@ section h3 {
 
 .summary li {
 
-    background: #dcfce7;
+    background: #3195ed;
+    border-radius: 10px;
     color:#164d65;
 }
