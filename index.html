@@ -14,29 +14,43 @@
 
     <main class="card">
         <form id="personForm" class="rowForm">
-            <input type="text" placeholder="Add persons name"/>
+            <input id="personInput" type="text" placeholder="Add persons name"/>
             <button>Add Person</button>
         </form>
 
-        <form id="ExpenseForm" class="rowForm">
-             <input type="text" placeholder="Expense Description" />
-             <input type="number" placeholder="amount" />
-             <select id="">
-                <option value="John">John</option>
-                <option value="Carlos">Carlos</option>
-             </select>
+        <form id="expenseForm" class="rowForm">
+             <input id="descInput" type="text" placeholder="Expense Description" />
+             <input id="amountInput" type="number" placeholder="amount" />
+             <select id="paidBySelect"></select>
              <button>Add Expense</button>
         </form>
         <section>
             <h3>People</h3>
-            <ul class="lsit">
-                <li>John</li>
-                <li>Carlos</li>
+            <ul id="peopleList" class="list"></ul>
+        </section>
+
+        <section>
+            <h3>Expenses</h3>
+                  <ul id="expenseList" class="list">
+         
+              
+        </section>
+            <h3>Total</h3>
+            <p>
+                Total Spent: <strong id="totalSpent" >$0.00</strong><br/>
+                Split Per Person <strong id="splitAmount" >$0.00</strong>
+            </p>
+        <section>
 
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section class="summary">
+            <h3>Summary</h3>
+                <ul id="summaryList" class="list"></ul>
+                <li></li>
+                <li></li>
+                </ul>
+        </section>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
